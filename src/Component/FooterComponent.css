@@ -1,0 +1,54 @@
+.footer {
+  background: linear-gradient(135deg, #333, #444); /* Modern gradient background */
+  color: #fff;
+  padding: 40px 20px; /* Increased padding for better spacing */
+  text-align: center;
+  margin-top: 60px; /* More space above the footer */
+  border-top: 5px solid #e91e63; /* Accent color for modern separation */
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.footer p {
+  margin: 0;
+  font-size: 15px; /* Slightly larger font size */
+  margin-bottom: 20px; /* More space below text */
+  line-height: 1.6; /* Improved readability */
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* More spacing between links */
+  flex-wrap: wrap; /* Wrap links on smaller screens */
+  margin-bottom: 20px; /* Add space below links */
+}
+
+.footer-links a {
+  color: #e91e63;
+  text-decoration: none;
+  font-size: 18px; /* Larger font size for better readability */
+  font-weight: 500; /* Semi-bold for better emphasis */
+  transition: color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+  position: relative; /* For pseudo-element hover effect */
+}
+
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #e91e63;
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0); /* Start hidden */
+  transition: transform 0.3s ease; /* Smooth reveal */
+}
+
+.footer-links a:hover::after {
+  transform: scaleX(1); /* Reveal underline on hover */
+}
+
+.footer-links a:hover {
+  color: #fff; /* Change color on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+}

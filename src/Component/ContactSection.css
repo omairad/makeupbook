@@ -1,0 +1,72 @@
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh; /* Increased height for better layout */
+  margin: 0 auto;
+  padding: 60px 20px; /* Increased padding for more whitespace */
+  background: linear-gradient(135deg, #f0f4f8, #ffffff); /* Modern gradient background */
+  text-align: center;
+  border-radius: 15px; /* Rounded corners for the section */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-top: 40px; /* Increased space at the top */
+  margin-bottom: 40px; /* Increased space at the bottom */
+}
+
+.contact-section h2 {
+  font-size: 40px; /* Larger font size for emphasis */
+  margin-bottom: 30px; /* More space for better separation */
+  color: #333;
+  font-weight: 700; /* Bold for a modern look */
+}
+
+.contact-form {
+  max-width: 500px; /* Increased width for larger screens */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* More gap between form elements */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #ddd; /* Slightly thicker border */
+  border-radius: 8px; /* More rounded corners for modern look */
+  width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for focus effects */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-color: #e91e63; /* Highlighted border on focus */
+  box-shadow: 0 4px 8px rgba(233, 30, 99, 0.1); /* Deeper shadow on focus */
+}
+
+.contact-form textarea {
+  height: 120px; /* Increased height for better usability */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-button {
+  padding: 15px;
+  font-size: 18px;
+  color: #fff;
+  background: linear-gradient(135deg, #e91e63, #d81b60); /* Gradient background for modern button */
+  border: none;
+  border-radius: 8px; /* More rounded corners */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.contact-button:hover {
+  background: linear-gradient(135deg, #d81b60, #c2185b); /* Darker gradient on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}

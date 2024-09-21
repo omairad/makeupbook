@@ -3,22 +3,21 @@ import HeaderComponent from './Component/HeaderComponent';
 import HeroSection from './Component/HeroSection';
 import ServicesSection from './Component/ServicesSection';
 import TestimonialsSection from './Component/TestimonialsSection';
-import ContactSection from './Component/ContactSection';
+import ContactSection from '././Component/ContactSection';
 import FooterComponent from './Component/FooterComponent';
 import BookingSchedulerComponent from './Component/BookingSchedulerComponent';
-
-const App = () => {
+const HomePage = () => {
   return (
-    <div className="App">
+    <div className="home-page">
       <HeaderComponent />
       <HeroSection />
       <ServicesSection />
       <TestimonialsSection />
-      <BookingSchedulerComponent />
+      <BookingSchedulerComponent/>
       <ContactSection />
       <FooterComponent />
     </div>
   );
 };
 
-export default App;
+export default HomePage;

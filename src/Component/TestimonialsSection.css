@@ -1,0 +1,73 @@
+.testimonials {
+  padding: 80px 20px; /* Increased padding for more whitespace */
+  background: linear-gradient(135deg, #f3f4f7, #e9ecef); /* Modern gradient background */
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 40px; /* Larger for emphasis */
+  margin-bottom: 50px; /* More space for better visual separation */
+  color: #333;
+  font-weight: 700; /* Bold for a modern look */
+}
+
+.testimonials-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* More spacing between testimonial items */
+  flex-wrap: wrap;
+  max-width: 1200px; /* Center content and limit width */
+  margin: 0 auto;
+}
+
+.testimonial-item {
+  background: #ffffff; /* Clean white background */
+  padding: 30px; /* Increased padding for more whitespace */
+  width: 320px; /* Slightly wider for more content */
+  border-radius: 15px; /* Rounded corners for a modern feel */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08); /* Softer shadow for depth */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+  position: relative; /* For hover effect */
+  overflow: hidden; /* Hide overflow for hover effect */
+}
+
+.testimonial-item:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12); /* Deeper shadow on hover */
+}
+
+.testimonial-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #e91e63, #d81b60); /* Gradient overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.testimonial-item:hover::before {
+  opacity: 0.2; /* Slight gradient overlay on hover */
+}
+
+.testimonial-item p {
+  font-size: 18px; /* Slightly larger font size for better readability */
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6; /* Improved readability */
+  z-index: 1; /* Ensure text is above hover effect */
+  position: relative;
+}
+
+.testimonial-item h4 {
+  font-size: 20px; /* Slightly larger font size */
+  color: #e91e63;
+  font-weight: 600; /* Bold for emphasis */
+  z-index: 1; /* Ensure text is above hover effect */
+  position: relative;
+  margin-top: 15px;
+}

@@ -1,0 +1,69 @@
+.booking-scheduler {
+  padding: 80px 20px; /* Increased padding for more whitespace */
+  background: linear-gradient(135deg, #f0f4f8, #ffffff); /* Modern gradient background */
+  text-align: center;
+  border-radius: 15px; /* Rounded corners for the whole section */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 1200px; /* Restrict width to make it look centered */
+  margin: 40px auto; /* Center align */
+}
+
+.booking-scheduler h2 {
+  font-size: 40px; /* Larger for emphasis */
+  margin-bottom: 30px; /* More space for better visual separation */
+  color: #333;
+  font-weight: 700; /* Bold for a modern look */
+}
+
+.scheduler-table {
+  margin-top: 30px; /* More space between the header and the table */
+  overflow-x: auto; /* Allows table to scroll horizontally on small screens */
+}
+
+.scheduler-table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px; /* Rounded corners for the table */
+  overflow: hidden; /* Ensures rounded corners are applied */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05); /* Subtle shadow for the table */
+}
+
+.scheduler-table th,
+.scheduler-table td {
+  padding: 20px; /* More padding for better spacing */
+  text-align: center;
+  border-bottom: 1px solid #ddd; /* Only border-bottom for cleaner look */
+  cursor: pointer;
+  font-size: 16px; /* Slightly larger font size for better readability */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+}
+
+.scheduler-table th {
+  background-color: #e9ecef; /* Softer background color for header */
+  color: #333;
+  font-weight: 600; /* Slightly bolder text for headers */
+  position: sticky; /* Stick the header to the top on scroll */
+  top: 0;
+  z-index: 1;
+}
+
+.scheduler-table .available {
+  background-color: #e6fffa; /* Softer and modern color for available slots */
+  border-radius: 8px; /* Rounded corners for cells */
+}
+
+.scheduler-table .booked {
+  background-color: #ffe6e6; /* Softer red for booked slots */
+  cursor: not-allowed;
+  color: #999; /* Dimmed color for booked text */
+  border-radius: 8px; /* Rounded corners for cells */
+}
+
+.scheduler-table .available:hover {
+  background-color: #c3f0e8; /* Brighter hover color */
+  transform: scale(1.03); /* Slight zoom effect on hover */
+}
+
+.scheduler-table .booked:hover {
+  transform: none; /* No hover effect for booked cells */
+}

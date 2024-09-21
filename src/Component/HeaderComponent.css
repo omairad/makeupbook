@@ -1,0 +1,68 @@
+.header {
+  background-color: #ffffff; /* Keep the clean white background */
+  padding: 15px 40px; /* Adjusted padding for better spacing */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Softer shadow for a modern look */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background and shadow */
+}
+
+.header.scrolled {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background on scroll */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Deeper shadow on scroll */
+}
+
+.header h1 {
+  font-size: 28px; /* Slightly larger font size */
+  color: #333;
+  margin: 0;
+  font-weight: 700; /* Bolder font for emphasis */
+  transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.header h1:hover {
+  color: #e91e63; /* Subtle hover effect for the header title */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* Increased gap for more spacing */
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500; /* Semi-bold for modern look */
+  font-size: 18px; /* Slightly larger for better readability */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+  position: relative; /* Position for pseudo-element */
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #e91e63;
+  transform: scaleX(0); /* Start hidden */
+  transition: transform 0.3s ease; /* Smooth reveal */
+}
+
+nav a:hover::after {
+  transform: scaleX(1); /* Reveal underline on hover */
+}
+
+nav a:hover {
+  color: #e91e63; /* Change color on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}

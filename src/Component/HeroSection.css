@@ -1,0 +1,55 @@
+.hero {
+  position: relative; /* For overlay */
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('../assets/fa.JPG'); /* Add a gradient overlay */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px; /* Added padding for better spacing on smaller screens */
+  overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+.hero-content {
+  max-width: 700px; /* Increased max-width for better readability */
+  z-index: 2; /* Make sure content is above the overlay */
+  padding: 20px; /* Added padding for spacing */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  background: rgba(0, 0, 0, 0.5); /* Slightly transparent background for better text visibility */
+  border-radius: 12px; /* Rounded corners for modern look */
+}
+
+.hero h1 {
+  font-size: 54px; /* Increased size for emphasis */
+  margin-bottom: 20px;
+  font-weight: 700; /* Bold for impact */
+  line-height: 1.2; /* Tighten line height for a cleaner look */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle text shadow for readability */
+}
+
+.hero p {
+  font-size: 20px; /* Increased font size for readability */
+  margin-bottom: 30px;
+  line-height: 1.6; /* Improved readability */
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2); /* Subtle text shadow for readability */
+}
+
+.hero-button {
+  padding: 15px 40px; /* Adjusted padding for a more prominent button */
+  background-color: #e91e63;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px; /* More rounded corners for a modern look */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+  font-size: 18px; /* Slightly larger for better visibility */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.hero-button:hover {
+  background-color: #d81b60; /* Hover effect color */
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
